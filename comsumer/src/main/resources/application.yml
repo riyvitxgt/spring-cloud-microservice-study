@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-comsumer
+server:
+  port: 9003
+eureka:
+  client:
+    service-url: http://peer1:8761/eureka/
+feign:
+  hystrix:
+    enabled: true
