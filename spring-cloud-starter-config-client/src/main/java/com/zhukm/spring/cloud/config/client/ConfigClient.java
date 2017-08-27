@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigClient {
     @RequestMapping("/")
-    public String home(){
-        return "This is config client";
+    public String home() {
+        return "Hello World!";
     }
+
     public static void main(String[] args) {
         SpringApplication.run(ConfigClient.class, args);
     }
